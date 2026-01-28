@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="animation.js"> </script>
 </head>
 <body>
     <nav>
         <div class="nav-box-layout">
           <div><img src="/assets/profile.jpg" alt=""></div>
       
-          <a class="available-pill" href="#">I’m available for work</a>
+          <a class="available-pill" href="#">I'm available for work</a>
       
           <div class="nav-list-container">
             <li><a href="#" data-text="Home">Home</a></li>
@@ -28,8 +27,114 @@
       <div class="mouse-follower"></div>
       
       <main>
-        <div></div>
+        <section class="hero">
+          <div class="hero-container">
+            <div class="label-left">
+              <h1>DUNCAN ROBERT</h1>
+              <p>DIGITAL</p>
+            </div>
+            
+            <!-- Floating image with flip card structure -->
+            <div class="floating-image-wrapper">
+              <div class="floating-image-card">
+                <div class="floating-image-front">
+                  <img src="/assets/profile.jpg" alt="Profile Front">
+                </div>
+                <div class="floating-image-back">
+                  <img src="/assets/back.jpg" alt="Profile Back">
+                </div>
+              </div>
+            </div>
+
+            <div class="label-right">
+              <h1>DESIGNER</h1>
+              <pre>I'm a US-based digital designer and
+                                Framer Developer</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="services-container">
+            <div class="left-container">
+             <div class="left-side">
+              <div class="label-container">
+                <h1>WHAT I CAN DO FOR YOU</h1>
+                <p>As a digital designer, I am a visual story teller, crafting experiences that connect depply and spark creativity. </p>
+              </div>
+
+              <div class="drop-list-container">
+                <details>
+                  <summary>1. UX/UI DESIGN</summary>
+                  <p><span>✓</span> Wireframing and prototyping</p>
+                  <p><span>✓</span> User Interface design for web and mobile apps</p>
+                  <p><span>✓</span> Usability testing and user feedback analysis</p>
+                  <p><span>✓</span> Interaction design and micro-animations</p>
+                </details>
+                <details>
+                  <summary>2. GRAPHIC DESIGN</summary>
+                  <p><span>✓</span> Logo and brand identity design</p>
+                  <p><span>✓</span> Social media graphics and ad creatives</p>
+                  <p><span>✓</span> Infographics and data visualization</p>
+                  <p><span>✓</span> Custom illustrations and icons</p>
+                </details>
+                <details>
+                  <summary>3. WEB DESIGN</summary>
+                  <p><span>✓</span> Responsive website design</p>
+                  <p><span>✓</span> Landing page design and optimization</p>
+                  <p><span>✓</span> Webflow development and customization</p>
+                  <p><span>✓</span> Website maintenance and updates</p>
+                </details>
+                <details>
+                  <summary>4. BRANDING</summary>
+                  <p><span>✓</span> Brand strategy and identity development</p>
+                  <p><span>✓</span> Visual style guide creation</p>
+                  <p><span>✓</span> Typography and color scheme selection</p>
+                  <p><span>✓</span> Brand storytelling and messaging</p>
+                </details>
+              </div>
+             </div>
+            </div>
+            <!-- Services right container - image lands here (BACK side) -->
+            <div class="right-container" id="services-image-target"></div>
+          </div>
+        </section>
+
+        <section class="About">
+          <div class="About-container">
+            <div class="left-container">
+             <div class="left-side">
+              <div class="label-container">
+                <h1>ABOUT ME</h1>
+                <p>Hi, I'm Duncan — a digital designer and Framer developer passionate about crafting meaningful and impactful digital experiences.</p>
+                <div class="about-first-labels">
+                  <div>
+                    <p>12</p>
+                    <p>Years of Experience</p>
+                  </div>
+                  <div>
+                    <p>270</p>
+                    <p>Completed Projects</p>
+                  </div>
+                  <div>
+                    <p>50+</p>
+                    <p>Client Worldwide</p>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <!-- About right container - image lands here (FRONT side) -->
+            <div class="right-container" id="about-image-target"></div>
+          </div>
+        </section>
       </main>
+
+      <!-- Load GSAP libraries -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
       
+      <!-- Your animation script (includes GSAP logic + nav + mouse) -->
+      <script src="animation.js"></script>
 </body>
 </html>
