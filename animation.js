@@ -16,6 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const cursorImgTag = cursorImage?.querySelector("img");
 
   const nav = document.querySelector("nav");
+  document.getElementById("contactBtn").addEventListener("click", () => {
+    document.querySelector("#contact")?.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+  
 
   /* ======================================================
      MOUSE MOVE (SINGLE SOURCE OF TRUTH)
